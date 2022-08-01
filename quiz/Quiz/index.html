@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="start_button"><button>Iniciar Quiz</button></div>
+
+    <div class="info_box">
+            <div class="info_titulo"><span>Regras do Quiz</span></div>
+
+
+        <div class="regras">
+            <div class="info">1. Voce tera apenas <span>20 segundos</span> para cada questão.</div>
+            <div class="info">2. Não poderá trocar de opção.</div>
+            <div class="info">3. Não poderá responder fora do tempo determinado.</div>
+            <div class="info">4. Não poderá sair ao meio do quiz.</div>
+            <div class="info">5. ira acumulando pontos ao longo do jogo.</div>
+        </div>
+        <div class="buttons">
+            <button class="sair">Terminar</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <!--quiz box-->
+
+    <div class="quiz_box">
+        <header>
+            <div class="titulo">its_yrnsaraiva Quiz</div>
+            <div class="timer">
+                <div class="time_text">tempo restante</div>
+                <div class="timer_sec">20</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!--<span>Quem foi o fundador do Facebook?</span>-->
+            </div>
+            <div class="option_lst">
+                <!--
+                <div class="option">
+                    <span>Steve Ballmer</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Mark Zuckerberg</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Bill Gates</span>
+                </div>
+                <div class="option">
+                    <span>Steve Jobs</span>
+                </div> -->
+            </div>
+        </section>
+
+        <footer>
+            <button class="next_button">Próxima pergunta</button>
+        </footer>
+    </div>
+
+    <!--result box-->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Fim do Quiz!</div>
+        <div class="score_text">
+            <span>...</span>
+        </div>
+        <div class="buttons">
+            <button class="restart">Reiniciar</button>
+            <button class="sair">Sair</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+
+</body>
+</html>
